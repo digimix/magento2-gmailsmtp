@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © 2015 MagePal. All rights reserved.
+ * Copyright © 2016 Digimix. All rights reserved.
  * See COPYING.txt for license details.
  */
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'MagePal_GmailSmtpApp',
+    'Digimix_GmailSmtpApp',
     __DIR__
 );

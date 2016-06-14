@@ -1,5 +1,5 @@
 <?php
-namespace MagePal\GmailSmtpApp\Controller\Adminhtml\Test;
+namespace Digimix\GmailSmtpApp\Controller\Adminhtml\Test;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
@@ -14,7 +14,7 @@ class Index extends Action
     protected $_resultPageFactory;
     
     /**
-     * @var \MagePal\GmailSmtpApp\Helper\Data
+     * @var \Digimix\GmailSmtpApp\Helper\Data
      */
     protected $_dataHelper;
 
@@ -22,12 +22,12 @@ class Index extends Action
      * Index constructor.
      * @param Context $context
      * @param PageFactory $resultPageFactory
-     * @param \MagePal\GmailSmtpApp\Helper\Data $dataHelper
+     * @param \Digimix\GmailSmtpApp\Helper\Data $dataHelper
      */
     public function __construct(
         Context $context,
         PageFactory $resultPageFactory,
-        \MagePal\GmailSmtpApp\Helper\Data $dataHelper
+        \Digimix\GmailSmtpApp\Helper\Data $dataHelper
     ) {
         $this->_resultPageFactory = $resultPageFactory;
         $this->_dataHelper = $dataHelper;
@@ -45,7 +45,7 @@ class Index extends Action
         $store_id = $request->getParam('store', null);
         
         
-        $name = 'MagePal Gmail Smtp App Test';
+        $name = 'Digimix Gmail Smtp App Test';
         $username = $request->getPost('username');
         $password = $request->getPost('password');
         
@@ -83,8 +83,8 @@ class Index extends Action
         $mail = new \Zend_Mail();
         $mail->setFrom($from, $name);
         $mail->addTo($to, $to);
-        $mail->setSubject('Hello from MagePal');
-        $mail->setBodyText('Thank you for choosing MagePal extension.');
+        $mail->setSubject('Hello from Digimix');
+        $mail->setBodyText('Thank you for choosing this Digimix Magento extension.');
         
         
         $result = __('Sent... Please check your email') . ' ' . $to;
@@ -115,7 +115,7 @@ class Index extends Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('MagePal_GmailSmtpApp');
+        return $this->_authorization->isAllowed('Digimix_GmailSmtpApp');
     }
 
 

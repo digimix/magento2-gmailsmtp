@@ -1,10 +1,10 @@
 <?php
 /**
  * Mail Transport
- * Copyright © 2015 MagePal. All rights reserved.
+ * Copyright © 2016 Digimix. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace MagePal\GmailSmtpApp\Model;
+namespace Digimix\GmailSmtpApp\Model;
 
 
 
@@ -18,10 +18,10 @@ class Transport extends \Zend_Mail_Transport_Smtp implements \Magento\Framework\
 
     /**
      * @param \Magento\Framework\Mail\MessageInterface $message
-     * @param \MagePal\GmailSmtpApp\Helper\Data $dataHelper
+     * @param \Digimix\GmailSmtpApp\Helper\Data $dataHelper
      * @throws \Zend_Mail_Exception
      */
-    public function __construct(\Magento\Framework\Mail\MessageInterface $message, \MagePal\GmailSmtpApp\Helper\Data $dataHelper)
+    public function __construct(\Magento\Framework\Mail\MessageInterface $message, \Digimix\GmailSmtpApp\Helper\Data $dataHelper)
     {
         if (!$message instanceof \Zend_Mail) {
             throw new \InvalidArgumentException('The message should be an instance of \Zend_Mail');

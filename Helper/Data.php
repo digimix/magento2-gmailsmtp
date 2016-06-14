@@ -1,15 +1,15 @@
 <?php
 /**
- * MagePal_GmailSmtpApp Magento component
+ * Digimix_GmailSmtpApp Magento component
  *
- * @category    MagePal
- * @package     MagePal_GmailSmtpApp
- * @author      MagePal Team <info@magepal.com>
- * @copyright   MagePal (http://www.magepal.com)
+ * @category    Digimix
+ * @package     Digimix_GmailSmtpApp
+ * @author      Digimix Studios <hello@digimix.co>
+ * @copyright   Digimix (https://digimix.co)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-namespace MagePal\GmailSmtpApp\Helper;
+namespace Digimix\GmailSmtpApp\Helper;
 
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {

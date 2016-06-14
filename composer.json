@@ -1,5 +1,5 @@
 {
-    "name": "magepal/magento2-gmailsmtpapp",
+    "name": "digimix/magento2-gmailsmtp",
     "description":"Configure Magento 2 to use Google/Gmail SMTP server to send email",
     "keywords": [
         "magento 2",
@@ -25,7 +25,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "MagePal\\GmailSmtpApp\\": ""
+            "Digimix\\GmailSmtpApp\\": ""
         }
     }
 }

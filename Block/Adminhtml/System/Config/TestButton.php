@@ -1,10 +1,10 @@
 <?php
 /**
- * Copyright © 2016 MagePal. All rights reserved.
+ * Copyright © 2016 Digimix. All rights reserved.
  * See COPYING.txt for license details.
  */
 
-namespace MagePal\GmailSmtpApp\Block\Adminhtml\System\Config;
+namespace Digimix\GmailSmtpApp\Block\Adminhtml\System\Config;
 
 /**
  * "Reset to Defaults" button renderer
@@ -35,7 +35,7 @@ class TestButton extends \Magento\Config\Block\System\Config\Form\Field
     protected function _construct()
     {
         parent::_construct();
-        $this->setTemplate('MagePal_GmailSmtpApp::system/config/testbutton.phtml');
+        $this->setTemplate('Digimix_GmailSmtpApp::system/config/testbutton.phtml');
     }
 
     /**
@@ -59,7 +59,7 @@ class TestButton extends \Magento\Config\Block\System\Config\Form\Field
     }
     
     public function getAdminUrl(){
-        return $this->_urlBuilder->getUrl('magepalGmailsmtpapp/test', ['store' => $this->_request->getParam('store')]);
+        return $this->_urlBuilder->getUrl('digimixGmailsmtpapp/test', ['store' => $this->_request->getParam('store')]);
     }
 
     /**
