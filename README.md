@@ -23,8 +23,8 @@ composer require digimix/magento2-gmailsmtp:dev-master
 ```
 
 ####2 -  Enable Gmail Smtp 
- * php -f bin/magento module:enable --clear-static-content MagePal_GmailSmtp
- * php -f bin/magento setup:upgrade
+ * magento module:enable --clear-static-content Digimix_GmailSmtpApp
+ * magento setup:upgrade
 
 ####3 - Config Gmail Smtp 
-Log into your Magetno Admin, then goto Stores -> Configuration -> Advanced -> System -> Gmail/Google Apps SMTP Pro and enter your email credentials
+Log into your Magento Admin, then goto Stores -> Configuration -> Advanced -> System -> Gmail/Google Apps SMTP Pro and enter your email credentials
