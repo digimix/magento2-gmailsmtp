@@ -19,7 +19,7 @@ Install Gmail Smtp Extension for Magento2
 
 ```
 composer config repositories.digimix-gmailsmtp git git@github.com:digimix/magento2-gmailsmtp.git
-composer require digimix/magento2-gmailsmtp:v1.1.2
+composer require digimix/magento2-gmailsmtp:dev-master
 ```
 
 ####2 -  Enable Gmail Smtp 
