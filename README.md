@@ -19,7 +19,7 @@ Install Gmail Smtp App for Magento2
 
 ```
 composer config repositories.magepal-gmailsmtpapp git git@github.com:digimix/magento2-gmailsmtp.git
-composer require magepal/magento2-gmailsmtp:dev-master
+composer require digimix/magento2-gmailsmtp:dev-master
 ```
 
 ####2 -  Enable Gmail Smtp App
